@@ -27,3 +27,4 @@ You don’t have to handle the length modifiers
 2. Just because it's in print doesn't mean it's the gospel
 mandatory
 Create a man page for your function.
+Create a man
