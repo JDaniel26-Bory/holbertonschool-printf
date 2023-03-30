@@ -1,30 +1,52 @@
-TASK 0) I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life,
-Write a function that produces output according to a format.
-Prototype: int _printf(const char *format, ...);
-Returns: the number of characters printed (excluding the null byte used to end output to strings)
-write output to stdout, the standard output stream
-format is a character string. The format string is composed of zero or more directives. See man 3 printf for more detail. You need to handle the following conversion specifiers:
-c
-s
-%
-You don’t have to reproduce the buffer handling of the C library printf function
-You don’t have to handle the flag characters
-You don’t have to handle field width
-You don’t have to handle precision
-You don’t have to handle the length modifiers
+<p align="center">
+<img src="https://www.freepik.com/free-photo/it-specialist-checking-code-computer-dark-office-night_5698336.htm#query=development&from_query=develoment&position=23&from_view=search&track=sph" width="450" height="250">	
+<h1> Printf project </h1></p>
 
-1. Education is when you read the fine print. Experience is what you get if you don't
-Handle the following conversion specifiers:
+<h3> Description</h3>
+<p>printf is a weel known function used in C programming to do formated printing. Usually it only takes the standard library 
+<stdio.h> to call it into a c program, and using it for simple strings or formatted specifiers that allow us to print diferent types of data. This time we are presenting a printf project made from scratch in most of its features in order to understand the complexity of a powerful tool. You can see man 3 of printf to understand how _printf works.</p>
 
-d
-i
-You don’t have to handle the flag characters
-You don’t have to handle field width
-You don’t have to handle precision
-You don’t have to handle the length modifiers
+<h3> Compilation</h3>
+
+```$ gcc -Wall -Werror -Wextra -pedantic *.c```
 
 
-2. Just because it's in print doesn't mean it's the gospel
-mandatory
-Create a man page for your function.
-Create a man
+<h3> Prototype </h3>
+
+```int _printf(const char *format, ...)```
+
+
+<h3>Return</h3>
+If everything is succesful the function returns the number of characteres printed.
+
+<h3>Formats</h3>
+
+| Specifiers      | Description |
+| ----------- | ----------- |
+| %c  | Print single character |
+| %s  | Print string of characteres |
+| %d  | Print decimal numbers|
+| %i  | Print integers |
+
+<h3>Project files</h3>
+
+ File        | Description |
+| ----------- | ----------- |
+| [main.h](https://github.com/JDaniel26-Bory/holbertonschool-printf/blob/main/main.h)                | **Header file**<br>Include all  function prototypes<br> Include structure of specifiers|
+| [printf.c](https://github.com/JDaniel26-Bory/holbertonschool-printf/blob/main/printf.c)                      | **Project function: _printf** <br> Start the variadic list.<br> Iterates string  format  of entry and check for a moldule symbol (%) . If  the symbol is found then check if the next char match with one of the valid specifiers in the structure using the auxiliar function to comapare ( comp), in that case the respective function of these format is called.<br> For the characters that doesn't match any of the formats the function ignores the module symbole and print it  as a string.<br> In case that  the module symbole is not found, print the each character normally.|
+| [printf_functions.c](https://github.com/JDaniel26-Bory/holbertonschool-printf/blob/main/printf_functions.c)  | **Auxiliar functions**<br> _putchar: using write function, prints a character<br> printc: print character using list variable.<br> print_string: print <strings, if string is null it pirnts (null)<br> print_n: print numbers base 10.|
+| [printf_functions.c](https://github.com/JDaniel26-Bory/holbertonschool-printf/blob/main/man_3_printf)  | **Man Of our Re-creation of pritf**<br>man_3_printf: The structure of a man page Man pages are all laid out with specific sections, which include: NAME - the name of the command in questio.
+SYNOPSIS - the structure of the command.
+DESCRIPTION - a description of the command.
+OPTIONS - available options for the command.
+AUTHOR - the author of the command.
+REPORTING BUGS - instructions on reporting bugs to the developer(s).
+COPYRIGHT - information about command license.
+SEE ALSO - points to full documentation or related commands.
+CONFIGURATION - configuration details for a command or device.
+EXIT STATUS - possible exit status values.|
+
+<h3>Contributors</h3>
+
+Juan Daniel Restrepo - [@JDaniel26-Bory](https://github.com/JDaniel26-Bory)<br>
+Ruben Dario Florez - [@Rubio91147](https://github.com/Rubio91147)<br>
