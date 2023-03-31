@@ -35,16 +35,7 @@ If everything is succesful the function returns the number of characteres printe
 | [main.h](https://github.com/JDaniel26-Bory/holbertonschool-printf/blob/main/main.h)                | **Header file**<br>Include all  function prototypes<br> Include structure of specifiers|
 | [printf.c](https://github.com/JDaniel26-Bory/holbertonschool-printf/blob/main/printf.c)                      | **Project function: _printf** <br> Start the variadic list.<br> Iterates string  format  of entry and check for a moldule symbol (%) . If  the symbol is found then check if the next char match with one of the valid specifiers in the structure using the auxiliar function to comapare ( comp), in that case the respective function of these format is called.<br> For the characters that doesn't match any of the formats the function ignores the module symbole and print it  as a string.<br> In case that  the module symbole is not found, print the each character normally.|
 | [printf_functions.c](https://github.com/JDaniel26-Bory/holbertonschool-printf/blob/main/printf_functions.c)  | **Auxiliar functions**<br> _putchar: using write function, prints a character<br> printc: print character using list variable.<br> print_string: print <strings, if string is null it pirnts (null)<br> print_n: print numbers base 10.|
-| [printf_functions.c](https://github.com/JDaniel26-Bory/holbertonschool-printf/blob/main/man_3_printf)  | **Man Of our Re-creation of pritf**<br>man_3_printf: The structure of a man page Man pages are all laid out with specific sections, which include: NAME - the name of the command in questio.
-SYNOPSIS - the structure of the command.
-DESCRIPTION - a description of the command.
-OPTIONS - available options for the command.
-AUTHOR - the author of the command.
-REPORTING BUGS - instructions on reporting bugs to the developer(s).
-COPYRIGHT - information about command license.
-SEE ALSO - points to full documentation or related commands.
-CONFIGURATION - configuration details for a command or device.
-EXIT STATUS - possible exit status values.|
+| [Man Recreation Printf.c](https://github.com/JDaniel26-Bory/holbertonschool-printf/blob/main/man_3_printf)  | **Man Of our Re-creation of pritf**<br>man_3_printf: The structure of a man page Man pages are all laid out with specific sections, which include: NAME - the name of the command in questio. SYNOPSIS - the structure of the command.DESCRIPTION - a description of the command. OPTIONS - available options for the command. AUTHOR - the author of the command. REPORTING BUGS - instructions on reporting bugs to the developer(s). COPYRIGHT - information about command license.SEE ALSO - points to full documentation or related commands. CONFIGURATION - configuration details for a command or device. EXIT STATUS - possible exit status values.|
 
 <h3>Contributors</h3>
 
